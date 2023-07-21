@@ -6,8 +6,8 @@ from keras_preprocessing.image import load_img
 from keras_preprocessing.image import img_to_array 
 
 
-import tensorflow as tf
-from tensorflow import keras
+#import tensorflow as tf
+#from tensorflow import keras
 from skimage import transform, io
 import numpy as np
 import os
