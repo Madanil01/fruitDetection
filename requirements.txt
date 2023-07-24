@@ -1,9 +1,9 @@
 gunicorn
-numpy
+numpy==1.23.5
 flask
 joblib
 scikit-learn
-tensorflow
+tensorflow==2.12.0
 keras_preprocessing
 keras
 scikit-image
