@@ -16,6 +16,10 @@ from datetime import datetime
 from keras_preprocessing import image
 from flask_cors import CORS
 
+# Untuk menggunakan CPU
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
 app = Flask(__name__)
 
 # load model for prediction
