@@ -7,6 +7,8 @@ from keras_preprocessing.image import img_to_array
 
 
 #import tensorflow as tf
+import tensorflow as tf
+
 #from tensorflow import keras
 from skimage import transform, io
 import numpy as np
@@ -16,9 +18,11 @@ from datetime import datetime
 from keras_preprocessing import image
 from flask_cors import CORS
 
-# Untuk menggunakan CPU
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Hanya tampilkan pesan kesalahan dan lebih tinggi, hilangkan pesan informasi.
+
+# Atur variabel lingkungan untuk memaksa TensorFlow menggunakan CPU
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  # Menggunakan GPU dengan ID -1 (artinya tidak ada GPU yang digunakan)
 
 app = Flask(__name__)
 
@@ -28,7 +32,7 @@ app = Flask(__name__)
 #modelcnn2 = load_model("./model/buahP3.h5")
 #modelcnn3 = load_model("./model/buahPerc3.h5")
 
-modelVGG = load_model("./model/buahVGGNewDIY.h5")
+modelVGG = tf.keras.models.load_model("./model/buahVGGNewDIY.h5")
 
 
 UPLOAD_FOLDER = 'static/uploads/'
