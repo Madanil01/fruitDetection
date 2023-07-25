@@ -117,13 +117,13 @@ def predict():
                     'Semangka Merah',
                     'Strawberry']
     #class_names = ['Apple','Avocado','Banana','Dates','Grape Blue','Grape White','Kiwi','Lemon','Lychee','Mango','Orange','Papaya','Pear','Strawberry','Tomato','Watermelon']
-    vitaminA = ['ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya']
-    vitaminC = ['no','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya']
-    vitaminE = ['ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya']
-    vitaminK = ['ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya']
-    vitaminB1 = ['ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya']
-    vitaminB2 = ['ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya']
-    vitaminB3 = ['ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya','no','ya','ya']
+    vitaminA = ['ya','ya','ya','no','no','no','ya','ya','ya','no','ya','ya','ya','no','ya','ya']
+    vitaminC = ['no','ya','ya','ya','ya','ya','ya','ya','ya','ya','ya','ya','ya','ya','ya','ya']
+    vitaminE = ['ya','ya','no','no','no','ya','no','ya','ya','no','no','no','no','no','no','ya']
+    vitaminK = ['ya','no','no','no','no','ya','no','ya','ya','ya','no','no','no','no','no','ya']
+    vitaminB1 = ['no','no','ya','ya','ya','no','no','no','no','no','ya','no','no','no','no','no']
+    vitaminB2 = ['no','no','ya','no','no','no','no','no','no','ya','ya','no','no','ya','no','no']
+    vitaminB3 = ['no','no','ya','no','no','no','no','no','no','ya','no','no','no','no','no','no']
     # result = {
     #     "filename" : predict_image_path,
     #     "prediction": class_names[np.argmax(prediction_array)],
