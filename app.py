@@ -1,13 +1,13 @@
 
 from flask import Flask, render_template, request, jsonify
-from keras.models import load_model
+#from keras.models import load_model
 
 from keras_preprocessing.image import load_img
 from keras_preprocessing.image import img_to_array 
 
 
 #import tensorflow as tf
-#import tensorflow as tf
+import tensorflow as tf
 
 #from tensorflow import keras
 from skimage import transform, io
@@ -30,7 +30,7 @@ app = Flask(__name__)
 #modelcnn2 = load_model("./model/buahP3.h5")
 #modelcnn3 = load_model("./model/buahPerc3.h5")
 
-modelVGG = load_model("./model/buahVGGNewDIY.h5")
+modelVGG = tf.keras.models.load_model("./model/buahVGGNewDIY.h5")
 
 
 UPLOAD_FOLDER = 'static/uploads/'
