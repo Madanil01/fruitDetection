@@ -17,8 +17,6 @@ from PIL import Image
 from datetime import datetime
 from keras_preprocessing import image
 from flask_cors import CORS
-
-import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Hanya tampilkan pesan kesalahan dan lebih tinggi, hilangkan pesan informasi.
 
 # Atur variabel lingkungan untuk memaksa TensorFlow menggunakan CPU
