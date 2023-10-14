@@ -8,8 +8,3 @@ TUTORIAL PENGGUNAAN,
 5.	Lalu jalankan aplikasi dengan mejalankan perintah python app.py.
 6.	Dan akses http://127.0.0.1:5000
 7.	Pertama Instal library yang dibutuhkan seperti, flask, numpy, tensorflow, keras_preprocessing, PIL dan keras. 
-
-
-OPEN ANACONDA TERMINAL PADA FOLDER INI
-JALANKAN "python apps.py"
-AKSES DI WEB "localhost:5000"
